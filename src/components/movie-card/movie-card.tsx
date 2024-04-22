@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Movie } from "@/types"
 import { Box, Link, Skeleton, Typography } from "@mui/material"
-import Image from "next/image"
 import React, { ReactNode, Suspense } from "react";
 import { MovieCardImdbRating } from "./imdb-rating";
 import { ErrorBoundary } from "react-error-boundary";

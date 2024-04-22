@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import 'server-only';
 import { Box, Grid, Typography } from "@mui/material";
-import { Movie } from '@/types';
+import { MovieDetails } from '@/types';
 
 async function getMovie(movieId: string) {
   const API_URL = 'https://www.omdbapi.com/?apikey=2356a083';
@@ -10,7 +10,7 @@ async function getMovie(movieId: string) {
   await delay()
   const res = await fetch(`${API_URL}&i=${movieId}`);
   const json = await res.json();
-  return json as Movie;
+  return json as MovieDetails;
 }
 
 type MoviePageProps = {

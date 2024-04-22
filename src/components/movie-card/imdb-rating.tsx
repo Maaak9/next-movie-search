@@ -19,7 +19,8 @@ async function getMovieDetails (movieId: string) {
 
 export const MovieCardImdbRating = async ({
   movieId
-}: { movieId: string}) => {
+}: { movieId?: string}) => {
+  if (!movieId) return null;
 
   const movieDetails = await getMovieDetails(movieId);
   movieDetails.imdbRating
