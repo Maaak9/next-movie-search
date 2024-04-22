@@ -6,7 +6,7 @@ import { MovieDetails } from '@/types';
 async function getMovie(movieId: string) {
   const API_URL = 'https://www.omdbapi.com/?apikey=2356a083';
   // create delay to be able to se the loading
-  const delay = () => new Promise((resolve) => setTimeout(resolve, 2000))
+  const delay = () => new Promise((resolve) => setTimeout(resolve, 1000))
   await delay()
   const res = await fetch(`${API_URL}&i=${movieId}`);
   const json = await res.json();
