@@ -1,3 +1,7 @@
+# Next js playbook.
+Testing Nextjs server components with https://www.omdbapi.com api. Testing out loading state / errors etc
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
